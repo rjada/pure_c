@@ -1,0 +1,14 @@
+execve("./a.out", ["./a.out", "11"], 0x7ffd8fbe1498 /* 26 vars */) = 0
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdc13a4940) = -1 EINVAL (Invalid argument)
+brk(NULL)                               = 0x979000
+brk(0x97a1c0)                           = 0x97a1c0
+arch_prctl(ARCH_SET_FS, 0x979880)       = 0
+uname({sysname="Linux", nodename="DESKTOP-V6BDDFB", ...}) = 0
+readlink("/proc/self/exe", "/home/rjada/pure_c/a.out", 4096) = 24
+brk(0x99b1c0)                           = 0x99b1c0
+brk(0x99c000)                           = 0x99c000
+mprotect(0x4bd000, 12288, PROT_READ)    = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}) = 0
+write(1, "Hello, dear 11\n", 15)        = 15
+exit_group(0)                           = ?
++++ exited with 0 +++
